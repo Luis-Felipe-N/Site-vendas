@@ -1,0 +1,28 @@
+#rodape {
+    background-color: var(--bg-color);
+}
+
+.wrapper-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.wrapper-rodape a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icons-rodape i {
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.icons-rodape i:hover {
+    color: #FF2E93;
+}
+
+.icons-rodape a:not(:last-child) {
+    margin-right: 1rem;
+}

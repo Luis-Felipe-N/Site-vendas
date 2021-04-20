@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* scroll suave */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Class para centralizar */
+.center {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 5%;
+}
+
+/* Setando cores */
+
+:root {
+    --text-color: #fff;
+    --bg-color: #1a1b1f;
+    /* background-color: var(--bg-color); */
+}
+
+.hover {
+    transition: .2s;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.hover:hover {
+    color: #FF2E93;
+}

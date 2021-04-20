@@ -1,0 +1,94 @@
+#card {
+    margin: 15% auto;
+    /* height: 80vh; */
+}
+
+.wrapper-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    transition: .1s;
+    width: 18.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: .2rem;
+}
+
+.card-img {
+    height: 8.75rem;
+}
+
+.spotify .card-img {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.OaGianJOHxEOBTcpQ1U7EQHaEK%26pid%3DApi&f=1);
+}
+
+.netflix .card-img {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.1Vy-UZbT7Y4kgCpWJW5_2gHaEK%26pid%3DApi&f=1);
+}
+
+.prime .card-img {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP._j17J2REb-tiCELQLXDkDgHaEK%26pid%3DApi&f=1);
+}
+
+.prime {
+    --cor-pla: #00bbff;
+}
+
+.spotify {
+    --cor-pla: #00ffa6;
+}
+
+.netflix {
+    --cor-pla: #ff0000;
+}
+
+.card:hover {
+    border: 2px solid var(--cor-pla);
+    transform: scale(1.02);
+}
+
+.card-img {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Descrição pro */
+
+.card-content {
+    padding: 1rem;    
+}
+
+.card-content h1 {
+    padding-bottom: .5rem;
+    color: var(--cor-pla);
+}
+
+.card-content p {
+    line-height: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.card-content .preco-produto {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.card-content .preco-produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content .preco-produto a {
+    /* background-color: var(--cor-pla); */
+    border: 2px solid var(--cor-pla);
+    color:  var(--cor-pla);
+    padding: .7rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 500;
+}

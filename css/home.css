@@ -1,0 +1,100 @@
+#home {
+    position: relative;
+}
+
+#home .square {
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: rgba(255, 46, 147,.6);
+    z-index: -1;
+    transform: rotate(45deg);
+    top: -6.2rem;
+    left: 1rem;
+}
+
+#home .circle {
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 100%;
+    background-color: rgba(20, 38, 100,.6);
+    z-index: -1;
+    transform: rotate(45deg);
+    top: -6.2rem;
+    left: 10rem;
+}
+
+.wrapper-home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-home {
+    margin-top: 15%;
+}
+
+.content-home h1 {
+    background: linear-gradient(to left, #FF2E93, #142664);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: max(55px,8vh);
+}
+
+.content-home p {
+    max-width: 30rem;
+    line-height: 1.5rem;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: #142664;
+    font-weight: 700;
+    padding: .7rem 2rem;
+    border: 2px solid #142664;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.btn::before {
+    transition: .2s;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 110%;
+    height: 0;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover::before {
+    background-color: #142664;
+    height: 350%;
+}
+
+.img-home {
+    max-width: 31rem;
+}
+
+.img-home img {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+    .wrapper-home {
+        flex-direction: column;
+    }
+    
+}

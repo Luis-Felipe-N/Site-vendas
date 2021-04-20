@@ -1,0 +1,127 @@
+#cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: var(--bg-color);
+}
+
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 1.25rem;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu ul li a::before {
+    content: '';
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #FF2E93;
+    position: absolute;
+    transition: .2s;
+}
+
+.menu ul li a:hover::before {
+    width: 100%;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#container-menu-hamburg {
+    width: 5rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-hamburg {
+    /* background-color: #fff; */
+    width: 2.5rem;
+    height: .125rem;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-hamburg::after, .menu-hamburg::before {
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .5s;
+}
+
+.menu-hamburg::after {
+    position: absolute;
+    top: -7px;
+}
+
+.menu-hamburg::before {
+    position: absolute;
+    bottom: -7px;
+    left: 5px;
+}
+
+.aberto .menu-hamburg::after {
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.aberto .menu-hamburg::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(135deg);
+}
+
+@media (max-width: 700px) {
+    .menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-color);
+        z-index: 3;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+    }
+
+    .menu-mobile {
+        display: block;
+        z-index: 4;
+    }
+
+    .menu ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .show {
+        left: 0;
+    }
+}
