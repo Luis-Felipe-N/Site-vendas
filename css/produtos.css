@@ -1,7 +1,21 @@
-#card {
-    margin: 15% auto;
+#produtos {
+    margin: 5% auto;
+    margin-bottom: 10%;
     /* height: 80vh; */
 }
+
+#produtos  > header {
+    text-align: center;
+
+}
+
+
+#produtos  > header > h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+
+}
+
 
 .wrapper-card {
     display: flex;
